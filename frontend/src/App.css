@@ -1,38 +1,64 @@
+a {
+  color: #15a2df;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  /* Style background and force App to cover 100% of the screen */
   background-color: #282c34;
   min-height: 100vh;
+
+  /* Center  children */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   font-size: calc(10px + 2vmin);
+
+  color: white;
+  text-align: center;
+}
+
+.Header {
+  /* Create underline */
+  border-bottom: 1px solid white;
+  margin: 0;
+}
+
+.Header-child {
+  margin: 0 0 100px 0;
+}
+
+.About-us {
+  background-color: #31363f;
+
+  border-radius: 20px;
+  max-width: 30%;
+  padding: 20px;
+
+  line-height: 35px;
+  font-size: 20px;
+
+  margin: 0 0 20px 0;
+}
+
+.footer-link-icons {
+  display: flex;
+
+  border-top: 1px solid white;
+
+  margin: 20px 0 0 0;
+}
+
+.footer-icon {
+  margin: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Change width of about section depending on width of the user device. */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 1000px) {
+  .About-us {
+    max-width: 70%;
   }
 }
